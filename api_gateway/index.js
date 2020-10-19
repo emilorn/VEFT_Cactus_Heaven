@@ -9,7 +9,7 @@ const messageBrokerInfo = {
         order: 'order_exchange'
     },
     routingKeys: {
-        createOrder: 'create_order'
+        createOrder: 'create_order',
     }
 }
 

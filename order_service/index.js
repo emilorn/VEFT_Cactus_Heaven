@@ -76,11 +76,10 @@ async function write_to_database(incoming_order){
   const { orderQueue } = messageBrokerInfo.queues;
   const { orderStatus } = messageBrokerInfo.routingKeys;
 
-  channel.consume(orderQueue, data => {
-
-    console.log("in channel.consume")
+  channel.consume(orderQueue, async data => {
     const data_json = JSON.parse(data.content.toString());
-    const create_order_result = write_to_database(data_json);
+    const create_order_result = await write_to_database(data_json);
+    console.log("created order resulst ----------->----->----->>>> " + create_order_result)
     console.log(`[x] Sent: ${JSON.stringify(create_order_result)}`);
     channel.publish(order, orderStatus, new Buffer.from(JSON.stringify(create_order_result)));
 
