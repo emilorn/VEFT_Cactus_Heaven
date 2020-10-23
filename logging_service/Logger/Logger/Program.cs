@@ -30,7 +30,7 @@ namespace Logger
                 consumer.Received += (model, ea) =>
                 {
                     var body = ea.Body.ToArray();
-                    var message = "Log:" + Encoding.UTF8.GetString(body);
+                    var message = "Log: " + Encoding.UTF8.GetString(body);
                     using (System.IO.StreamWriter file =
                         new System.IO.StreamWriter(@"log.txt", true))
                     {

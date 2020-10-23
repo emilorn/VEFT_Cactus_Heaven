@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\emmik\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\emmik\\.nuget\\packages"
+      "C:\\Users\\rikha\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\rikha\\.nuget\\packages"
     ]
   }
 }

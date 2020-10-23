@@ -27,7 +27,7 @@ const configureMessageBroker = channel => {
   channel.assertExchange(exchanges.order, 'direct', { durable: true });
   channel.assertQueue(queues.orderQueue, { durable: true });
   channel.bindQueue(queues.orderQueue, exchanges.order, routingKeys.createOrder);
-}
+};
 
 const createChannel = connection => new Promise((resolve, reject) => {
   connection.createChannel((error, channel) => {
@@ -39,16 +39,15 @@ const createChannel = connection => new Promise((resolve, reject) => {
 
 
 async function write_to_database(incoming_order){
-    console.log(incoming_order)
     let total_price = 0;
     let row_price = 0;
-    let items_array = incoming_order.items
+    let items_array = incoming_order.items;
 
     let new_order = await order.create({
         "customerEmail": incoming_order["email"],
         "totalPrice": 0,
         "orderDate": Date.now()
-    })
+    });
     for (let item in items_array){
 
         row_price = items_array[item].quantity * items_array[item].unitPrice;
@@ -64,7 +63,7 @@ async function write_to_database(incoming_order){
 
     }
     new_order.totalPrice = total_price;
-    new_order.save()
+    new_order.save();
 
   return new_order;
 }

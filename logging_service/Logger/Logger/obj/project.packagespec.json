@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\emmik\\OneDrive\\HR\\Coding\\microServices\\VEFT_Cactus_Heaven\\logging_service\\Logger\\Logger\\Logger.csproj",
+    "projectUniqueName": "C:\\Users\\rikha\\Documents\\RU\\RU-Projects\\VEFT_Cactus_Heaven\\logging_service\\Logger\\Logger\\Logger.csproj",
     "projectName": "Logger",
-    "projectPath": "C:\\Users\\emmik\\OneDrive\\HR\\Coding\\microServices\\VEFT_Cactus_Heaven\\logging_service\\Logger\\Logger\\Logger.csproj",
-    "outputPath": "C:\\Users\\emmik\\OneDrive\\HR\\Coding\\microServices\\VEFT_Cactus_Heaven\\logging_service\\Logger\\Logger\\obj\\",
+    "projectPath": "C:\\Users\\rikha\\Documents\\RU\\RU-Projects\\VEFT_Cactus_Heaven\\logging_service\\Logger\\Logger\\Logger.csproj",
+    "outputPath": "C:\\Users\\rikha\\Documents\\RU\\RU-Projects\\VEFT_Cactus_Heaven\\logging_service\\Logger\\Logger\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
